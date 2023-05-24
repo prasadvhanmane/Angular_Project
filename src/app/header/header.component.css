@@ -1,0 +1,8 @@
+.masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://images6.alphacoders.com/377/377155.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}

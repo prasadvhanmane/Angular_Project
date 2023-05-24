@@ -1,0 +1,17 @@
+<div class="text-center">
+  <h2 class="text-center"> Products</h2>
+  <div class="container text-center" *ngFor="let p of products|slice:0:count*2">
+    <br>
+    <div class="row">
+        <div class="col-sm-5 text-center" [ngStyle]="{color: p.available==='Available' ? 'Green' : 'Red'}">
+            <h2>{{p.name}}</h2>
+            <h5>Price: ${{p.price}}</h5>
+        </div>
+        <div class="col-sm-7">
+            <img class="mx-auto d-block" img [src]="p.image" width="380" height="290" alt="">
+        </div>
+    </div>
+  </div><br><br>
+  <button type="button" class="btn btn-primary btn-lg btn-block" *ngIf="count*2<products.length" (click)="count=count+1">See More..</button>
+  </div>
+  <br><br>
